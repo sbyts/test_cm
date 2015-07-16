@@ -7,7 +7,7 @@ import com.serhiy.edu.oms.data.IUser;
 import com.serhiy.edu.tools.ContextVisible;
 
 public class LoginPage {
-	public static final String INVALID_LOGIN_VALIDATOR = "Your login attempt was not successful, try again.";
+	public static final String INVALID_LOGIN_VALIDATOR = "Incorrect username or password.";
 	private WebElement loginName;
 	private WebElement password;
 
@@ -17,7 +17,7 @@ public class LoginPage {
 	}
 
 	public String getInvalidLoginValidator() {
-		return ContextVisible.get().getVisibleWebElement(By.xpath("//div[@id='edit']/fieldset/font"))
+		return ContextVisible.get().getVisibleWebElement(By.xpath("//div[@class='LoginContainer']//div[text()='Incorrect username or password.']"))
 				.getText().trim().substring(0, 49);
 	}
 
