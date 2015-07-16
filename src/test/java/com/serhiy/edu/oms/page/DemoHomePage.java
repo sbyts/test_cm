@@ -1,9 +1,9 @@
-package com.softserve.edu.oms.page;
+package com.serhiy.edu.oms.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.softserve.edu.tools.WebDriverUtils;
+import com.serhiy.edu.tools.WebDriverUtils;
 
 public class DemoHomePage extends HomePage {
 	private WebElement administration;

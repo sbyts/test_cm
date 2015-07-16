@@ -1,4 +1,4 @@
-package com.softserve.edu.tools;
+package com.serhiy.edu.tools;
 
 public class GeneralCustomException extends RuntimeException {
     private static final long serialVersionUID = 1L;

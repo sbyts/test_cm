@@ -1,4 +1,4 @@
-package com.softserve.edu.tools;
+package com.serhiy.edu.tools;
 
 import org.openqa.selenium.WebDriver;
 

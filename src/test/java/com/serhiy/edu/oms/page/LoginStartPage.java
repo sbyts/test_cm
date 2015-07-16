@@ -1,7 +1,7 @@
-package com.softserve.edu.oms.page;
+package com.serhiy.edu.oms.page;
 
-import com.softserve.edu.tools.IBrowser;
-import com.softserve.edu.tools.WebDriverUtils;
+import com.serhiy.edu.tools.IBrowser;
+import com.serhiy.edu.tools.WebDriverUtils;
 
 public class LoginStartPage extends LoginPage {
 

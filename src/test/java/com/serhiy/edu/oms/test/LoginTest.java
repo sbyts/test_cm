@@ -1,4 +1,4 @@
-package com.softserve.edu.oms.test;
+package com.serhiy.edu.oms.test;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -7,21 +7,21 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.softserve.edu.oms.data.IUser;
-import com.softserve.edu.oms.data.UrlRepository;
-import com.softserve.edu.oms.data.UrlRepository.Urls;
-import com.softserve.edu.oms.data.UserRepository;
-import com.softserve.edu.oms.page.AdminHomePage;
-import com.softserve.edu.oms.page.AdministrationPage;
-import com.softserve.edu.oms.page.AdministrationPage.AdministrationPageConditions;
-import com.softserve.edu.oms.page.AdministrationPage.AdministrationPageFields;
-import com.softserve.edu.oms.page.CustomerHomePage;
-import com.softserve.edu.oms.page.DemoHomePage;
-import com.softserve.edu.oms.page.LoginPage;
-import com.softserve.edu.oms.page.LoginStartPage;
-import com.softserve.edu.tools.BrowserRepository;
-import com.softserve.edu.tools.IBrowser;
-import com.softserve.edu.tools.WebDriverUtils;
+import com.serhiy.edu.oms.data.IUser;
+import com.serhiy.edu.oms.data.UrlRepository;
+import com.serhiy.edu.oms.data.UserRepository;
+import com.serhiy.edu.oms.data.UrlRepository.Urls;
+import com.serhiy.edu.oms.page.AdminHomePage;
+import com.serhiy.edu.oms.page.AdministrationPage;
+import com.serhiy.edu.oms.page.CustomerHomePage;
+import com.serhiy.edu.oms.page.DemoHomePage;
+import com.serhiy.edu.oms.page.LoginPage;
+import com.serhiy.edu.oms.page.LoginStartPage;
+import com.serhiy.edu.oms.page.AdministrationPage.AdministrationPageConditions;
+import com.serhiy.edu.oms.page.AdministrationPage.AdministrationPageFields;
+import com.serhiy.edu.tools.BrowserRepository;
+import com.serhiy.edu.tools.IBrowser;
+import com.serhiy.edu.tools.WebDriverUtils;
 
 public class LoginTest {
 

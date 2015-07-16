@@ -1,4 +1,4 @@
-package com.softserve.edu.oms.data;
+package com.serhiy.edu.oms.data;
 
 public class UrlRepository {
 	public static enum Urls {

@@ -1,12 +1,11 @@
-package com.softserve.edu.oms.page;
+package com.serhiy.edu.oms.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.softserve.edu.oms.data.IUser;
-
-import com.softserve.edu.tools.ContextVisible;
+import com.serhiy.edu.oms.data.IUser;
+import com.serhiy.edu.tools.ContextVisible;
 
 public class AdministrationPage {
 	public static enum AdministrationPageFields {

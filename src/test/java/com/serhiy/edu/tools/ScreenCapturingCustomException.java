@@ -1,4 +1,4 @@
-package com.softserve.edu.tools;
+package com.serhiy.edu.tools;
 
 public class ScreenCapturingCustomException extends GeneralCustomException {
     private static final long serialVersionUID = 1L;
