@@ -7,37 +7,31 @@ import com.serhiy.edu.tools.ContextVisible;
 
 public abstract class HomePage {
 	private WebElement firstName;
-//	private WebElement lastName;
-//	private WebElement role;
+	private WebElement lastName;
+	private WebElement role;
 	private WebElement logout;
 
 	public HomePage() {
-	//	firstName = ContextVisible.get().getVisibleWebElement(By
-	//			.xpath("//td[text()='First name']/following-sibling::td"));
-	//	lastName = ContextVisible.get().getVisibleWebElement(By
-	//			.xpath("//td[text()='Last name']/following-sibling::td"));
-	//	role = ContextVisible.get().getVisibleWebElement(By
-	//			.xpath("//td[text()='Role']/following-sibling::td"));
-	//	logout = ContextVisible.get().getVisibleWebElement(By.xpath("//a[@href='/OMS/logout.htm']"));
-		
 		firstName = ContextVisible.get().getVisibleWebElement(By
-							.xpath("//div[@id='profile_editor_switcher']//div[text()='demo']"));
-		logout = ContextVisible.get().getVisibleWebElement(By.xpath("//a[@href='/dashboard/auth/logout/']"));		
-				
-		
+				.xpath("//td[text()='First name']/following-sibling::td"));
+		lastName = ContextVisible.get().getVisibleWebElement(By
+				.xpath("//td[text()='Last name']/following-sibling::td"));
+		role = ContextVisible.get().getVisibleWebElement(By
+				.xpath("//td[text()='Role']/following-sibling::td"));
+		logout = ContextVisible.get().getVisibleWebElement(By.xpath("//a[@href='/cmf/logout']"));
 	}
 
 	public String getFirstName() {
 		return firstName.getText();
 	}
 
-//	public String getLastName() {
-//		return lastName.getText();
-//	}
+	public String getLastName() {
+		return lastName.getText();
+	}
 
-//	public String getRole() {
-//		return role.getText();
-//	}
+	public String getRole() {
+		return role.getText();
+	}
 
 	public LoginPage logout() {
 		logout.click();

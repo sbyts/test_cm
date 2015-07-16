@@ -12,8 +12,8 @@ public class LoginPage {
 	private WebElement password;
 
 	public LoginPage() {
-		loginName = ContextVisible.get().getVisibleWebElement(By.name("username"));
-		password = ContextVisible.get().getVisibleWebElement(By.name("password"));
+		loginName = ContextVisible.get().getVisibleWebElement(By.name("j_username"));
+		password = ContextVisible.get().getVisibleWebElement(By.name("j_password"));
 	}
 
 	public String getInvalidLoginValidator() {
@@ -27,12 +27,6 @@ public class LoginPage {
 		this.password.click();
 		this.password.sendKeys(user.getPassword());
 		this.password.submit();
-	}
-	
-	public DemoHomePage successDemoLogin(IUser user) {
-		setLoginData(user);
-		// Return a new page object representing the destination.
-		return new DemoHomePage();
 	}
 
 	public AdminHomePage successAdminLogin(IUser user) {
